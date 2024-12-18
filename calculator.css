@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    font-family: "Roboto Mono", serif;
+   font-optical-sizing: auto;
+   font-weight: 250;
+   font-style: normal;
+   background:linear-gradient(to bottom,rgb(92, 142, 189) 50%,black 50%);
+}
+.container{
+   
+    border:none;
+    padding: 40px 20px;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    background-color: rgb(117, 153, 188);
+    border-radius: 10px;
+}
+.content{
+    width:100%;
+}
+#input-btn{
+    width:100%;
+    text-align:right;
+    background: transparent;
+    color:rgb(12, 9, 9);
+    padding:15px 10px;
+    border:none;
+    font-size:35px;
+    margin-bottom: 10px;
+}
+#input-btn::placeholder{
+    color:rgb(66, 66, 66);
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:15px;
+}
+.input-button{
+    padding:25px;
+    border-radius:10px;
+    font-size:20px;
+    font-style:oblique;
+    
+}
+#input-btn[type="button"]{
+    font-size:20px;
+}
+input[type="button"]#equalto{
+    grid-row:span 2;
+    background-color:rgb(160, 176, 178)
+}
